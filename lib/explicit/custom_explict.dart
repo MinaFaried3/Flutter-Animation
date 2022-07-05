@@ -22,10 +22,16 @@ class _CustomExplicitState extends State<CustomExplicit>
             begin: const Size(20, 200), end: const Size(20, 600))
         .animate(CurvedAnimation(parent: controller, curve: Curves.easeInBack));
 
-    // not necessary because using Animated builder
+    // not necessary when using Animated builder
     controller.addListener(() {
       setState(() {});
     });
+  }
+
+  @override
+  dispose() {
+    controller.dispose();
+    super.dispose();
   }
 
   double height = 200;

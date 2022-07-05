@@ -25,11 +25,11 @@ class _AnimatedAlignmentWidgetState extends State<AnimatedAlignmentWidget> {
           child: AnimatedAlign(
             duration: const Duration(seconds: 1),
             curve: Curves.easeInOutExpo,
-            // alignment is like x,y system but negative in y is up
-            alignment: Alignment(dx, dy),
+            // alignment is like x,y system but negative in y is up and the 1 is the end of axis
+            // alignment: Alignment(dx, dy),
             // FractionalOffset is like y,x system
-            // alignment: FractionalOffset(0, 0.3),
-            child: FlutterLogo(
+            alignment: FractionalOffset(dx, dy),
+            child: const FlutterLogo(
               size: 40,
             ),
           ),

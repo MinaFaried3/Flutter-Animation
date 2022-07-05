@@ -18,7 +18,7 @@ class _PositionsState extends State<Positions> {
           Center(
             child: Text(
               "Hi animated positions",
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headline6,
             ),
           ),
           AnimatedPositioned(
@@ -29,7 +29,7 @@ class _PositionsState extends State<Positions> {
             child: AnimatedPadding(
               duration: const Duration(seconds: 1),
               curve: Curves.easeInOutExpo,
-              padding: EdgeInsets.all(hide ? 0 : 60),
+              padding: EdgeInsets.all(hide ? 0 : 30),
               child: Container(
                 width: 250,
                 height: 150,
