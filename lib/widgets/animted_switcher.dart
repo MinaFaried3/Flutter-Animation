@@ -9,6 +9,7 @@ class AnimatedSwitcherWidget extends StatefulWidget {
 
 class _AnimatedSwitcherWidgetState extends State<AnimatedSwitcherWidget> {
   int count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +26,7 @@ class _AnimatedSwitcherWidgetState extends State<AnimatedSwitcherWidget> {
                   key: ValueKey(count),
                 ),
                 transitionBuilder: (Widget child, Animation<double> animation) {
+                  //to change scale
                   return ScaleTransition(
                     scale: animation,
                     child: child,
