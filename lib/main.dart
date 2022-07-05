@@ -1,4 +1,4 @@
-import 'package:animation/widgets/animated_list.dart';
+import 'package:animation/widgets/animted_switcher.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const AnimatedListWidget(),
+      home: const AnimatedSwitcherWidget(),
     );
   }
 }
