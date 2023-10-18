@@ -125,25 +125,37 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: _submit,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30.0, vertical: 8.0),
-                      color: Theme.of(context).primaryColor,
-                      textColor:
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                          Theme.of(context).primaryColor,
+                        ),
+                        foregroundColor: MaterialStateProperty.all(
                           Theme.of(context).primaryTextTheme.button!.color,
+                        ),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        padding: MaterialStateProperty.all(
+                          const EdgeInsets.symmetric(
+                              horizontal: 30.0, vertical: 8.0),
+                        ),
+                      ),
                       child: Text(
                           _authMode == AuthMode.login ? 'LOGIN' : 'SIGN UP'),
                     ),
-                    FlatButton(
+                    TextButton(
                       onPressed: _switchAuthMode,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30.0, vertical: 4),
-                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      textColor: Theme.of(context).primaryColor,
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all(
+                          TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                      ),
                       child: Text(
                           '${_authMode == AuthMode.login ? 'SIGN UP' : 'LOGIN'} INSTEAD'),
                     ),
