@@ -1,4 +1,4 @@
-import 'package:animation/widgets/animted_switcher.dart';
+import 'package:animation/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
-      home: const AnimatedSwitcherWidget(),
+      theme: ThemeData(primarySwatch: Colors.teal, useMaterial3: true),
+      home: const HomeScreen(),
     );
   }
 }
