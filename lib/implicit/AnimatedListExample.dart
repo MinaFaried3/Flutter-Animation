@@ -26,6 +26,7 @@ class _AnimatedListExampleState extends State<AnimatedListExample> {
           ?.removeItem(index, duration: const Duration(milliseconds: 500),
               (BuildContext context, Animation<double> animation) {
         return SizeTransition(
+          key: UniqueKey(),
           sizeFactor: animation,
           child: ListTile(
             title: Text(removedItem),
@@ -48,6 +49,7 @@ class _AnimatedListExampleState extends State<AnimatedListExample> {
               (BuildContext context, int index, Animation<double> animation) {
             return SizeTransition(
               sizeFactor: animation,
+              key: UniqueKey(),
               child: ListTile(
                 title: Text(_list[index]),
                 trailing: IconButton(

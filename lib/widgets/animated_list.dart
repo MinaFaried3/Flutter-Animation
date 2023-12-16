@@ -18,7 +18,7 @@ class _AnimatedListState extends State<AnimatedListWidget> {
 
   void remove(int index) {
     key.currentState!.removeItem(
-      0,
+      index,
       (context, animation) => SizeTransition(
         sizeFactor: animation,
         child: const Card(

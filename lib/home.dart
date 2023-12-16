@@ -1,3 +1,12 @@
+import 'package:animation/explicit/AnimatedBuilderExample.dart';
+import 'package:animation/explicit/DefaultTextStyleTransitionExample.dart';
+import 'package:animation/explicit/FadeTransitionExample.dart';
+import 'package:animation/explicit/IndexedStackTransitionExample.dart';
+import 'package:animation/explicit/PositionedDirectionalTransitionExample.dart';
+import 'package:animation/explicit/PositionedTransitionExample.dart';
+import 'package:animation/explicit/RotationTransitionExample.dart';
+import 'package:animation/explicit/SizeTransitionExample.dart';
+import 'package:animation/explicit/TweenAnimationBuilderExample.dart';
 import 'package:animation/implicit/AnimatedCrossFadeExample.dart';
 import 'package:animation/implicit/AnimatedListExample.dart';
 import 'package:animation/implicit/AnimatedOpacityExample.dart';
@@ -103,94 +112,105 @@ class HomeScreen extends StatelessWidget {
                           builder: (context) => const AnimatedListExample()));
                 },
                 child: const Text("Animated List Example")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) =>
-            //               const PositionedTransitionExamlpe()));
-            //     },
-            //     child: const Text("Positioned Transition Examlpe")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) => const SizeTransitionExample()));
-            //     },
-            //     child: const Text("Size Transition Example")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) =>
-            //               const RotationTransitionExample()));
-            //     },
-            //     child: const Text("Rotation Transition Example")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) =>
-            //               const AnimatedBuilderExample()));
-            //     },
-            //     child: const Text("Animated Builde rExample")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) => const FadeTransitionExample()));
-            //     },
-            //     child: const Text("Fade Transition Example")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) =>
-            //               const PositionedDirectionalTransitionExample()));
-            //     },
-            //     child: const Text("Positioned Directional Transition Example")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) =>
-            //               const TweenAnimationBuilderExample()));
-            //     },
-            //     child: const Text("Tween Animation Builder Example")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) =>
-            //               const DefaultTextStyleTransitionExample()));
-            //     },
-            //     child: const Text("Default TextStyle Transition Example")),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //               builder: (context) =>
-            //               const IndexedStackTransitionExample()));
-            //     },
-            //     child: const Text("Indexed Stack Transition Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.cyanAccent,
+                  shadowColor: Colors.grey,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const PositionedTransitionExample()));
+                },
+                child: const Text("Positioned Transition Examlpe")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SizeTransitionExample()));
+                },
+                child: const Text("Size Transition Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const RotationTransitionExample()));
+                },
+                child: const Text("Rotation Transition Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const AnimatedBuilderExample()));
+                },
+                child: const Text("Animated Builder Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const FadeTransitionExample()));
+                },
+                child: const Text("Fade Transition Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const PositionedDirectionalTransitionExample()));
+                },
+                child: const Text("Positioned Directional Transition Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              TweenAnimationBuilderExample()));
+                },
+                child: const Text("Tween Animation Builder Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const DefaultTextStyleTransitionExample()));
+                },
+                child: const Text("Default TextStyle Transition Example")),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.cyanAccent),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const IndexedStackTransitionExample()));
+                },
+                child: const Text("Indexed Stack Transition Example")),
             // ElevatedButton(
             //     style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
             //     onPressed: () {
