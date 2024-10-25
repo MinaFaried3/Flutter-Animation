@@ -226,7 +226,7 @@ class HomeScreen extends StatelessWidget {
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 onPressed: () {
                   Navigator.of(context).push(
-                    PageFadeTransition(const PageTwo()),
+                    FadePageRoute(builder: (_) => const PageTwo()),
                   );
                 },
                 child: const Text(

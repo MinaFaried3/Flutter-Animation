@@ -16,7 +16,7 @@ class PageScaleTransition extends PageRouteBuilder {
             );
           },
           transitionDuration: Duration(seconds: 2),
-          reverseTransitionDuration: Duration(seconds: 2),
+          reverseTransitionDuration: Duration(seconds: 5),
           barrierLabel:
               "MINOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO", // accessibility tools (like VoiceOver on iOS) focus on the barrier.
           barrierColor: Colors.cyan,

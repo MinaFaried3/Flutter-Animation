@@ -18,7 +18,7 @@ class _RotationTransitionExampleState extends State<RotationTransitionExample>
     _controller =
         AnimationController(vsync: this, duration: const Duration(seconds: 3));
 
-    _animation = Tween<double>(begin: 0, end: 7.5).animate(_controller);
+    _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
   }
 
   @override

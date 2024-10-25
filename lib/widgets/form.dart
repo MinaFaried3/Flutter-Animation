@@ -132,7 +132,7 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           Theme.of(context).primaryColor,
                         ),
                         foregroundColor: MaterialStateProperty.all(
-                          Theme.of(context).primaryTextTheme.button!.color,
+                          Theme.of(context).primaryTextTheme.labelLarge!.color,
                         ),
                         shape: MaterialStateProperty.all(
                           RoundedRectangleBorder(

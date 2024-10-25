@@ -1,18 +1,26 @@
 import 'package:flutter/material.dart';
 
-class PageFadeTransition extends PageRouteBuilder {
-  final dynamic page;
+class FadePageRoute extends PageRouteBuilder {
+  final WidgetBuilder builder;
+  final AlignmentGeometry align;
+  final Duration duration;
+  final Color? transitionColor;
 
-  PageFadeTransition(this.page)
+  FadePageRoute(
+      {required this.builder,
+      this.align = Alignment.center,
+      this.duration = const Duration(seconds: 1),
+      this.transitionColor})
       : super(
-          pageBuilder: (context, animation, secondaryAnimation) => page,
+          pageBuilder: (context, animation, secondaryAnimation) =>
+              builder(context),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return Align(
-              alignment: Alignment.center,
+              alignment: align,
               child: FadeTransition(opacity: animation, child: child),
             );
           },
-          transitionDuration: Duration(seconds: 2),
-          barrierColor: Colors.cyan,
+          transitionDuration: duration,
+          barrierColor: transitionColor,
         );
 }

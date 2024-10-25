@@ -59,7 +59,8 @@ class _ModelBarrierState extends State<ModelBarrier>
                   });
                 });
               },
-              style: ElevatedButton.styleFrom(primary: Colors.orangeAccent),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orangeAccent),
               child: const Text("Pressed"),
             ),
             if (pressed) SizedBox(width: 200, height: 150, child: modelBarrier),

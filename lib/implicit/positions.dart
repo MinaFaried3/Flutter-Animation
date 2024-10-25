@@ -18,7 +18,7 @@ class _PositionsState extends State<Positions> {
           Center(
             child: Text(
               "Hi animated positions",
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ),
           AnimatedPositioned(
